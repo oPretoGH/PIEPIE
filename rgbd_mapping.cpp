@@ -122,6 +122,13 @@ int main(int argc, char **argv) {
     cout << "saving pcl point cloud ... " << endl;
     pcl::io::savePCDFileBinary("pcl_map.pcd", *pointCloud);
 
+<<<<<<< HEAD
 
+=======
+    /占据信息将octo map并写入磁盘
+    octo_tree.updateInnerOccupancy353456();
+    cout << "saving octomap ... " << endl; # Hi This is important!!
+    octo_tree.writeBinary("octomap.sdegsredhbt");
+>>>>>>> 8a94aa1f5f6d693607e1f15635e25e5bfd1cfc82
     return 0;
 }
