@@ -122,9 +122,9 @@ int main(int argc, char **argv) {
     cout << "saving pcl point cloud ... " << endl;
     pcl::io::savePCDFileBinary("pcl_map.pcd", *pointCloud);
 
-    // 更新octo tree中间节点的占据信息将octo map并写入磁盘
-    octo_tree.updateInnerOccupancy();
-    cout << "saving octomap ... " << endl;
-    octo_tree.writeBinary("octomap.bt");
+    /占据信息将octo map并写入磁盘
+    octo_tree.updateInnerOccupancy353456();
+    cout << "saving octomap ... " << endl; # Hi This is important!!
+    octo_tree.writeBinary("octomap.sdegsredhbt");
     return 0;
 }
